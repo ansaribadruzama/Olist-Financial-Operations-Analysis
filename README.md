@@ -1,38 +1,38 @@
 # 💰 Olist Financial Operations Analysis
 
-## 📌 Problem Statement
-Analyzed 100,000+ orders from a Brazilian e-commerce platform to identify 
-revenue trends, customer churn patterns, delivery performance and 
-profitability drivers across 2016-2018.
+An end-to-end data analytics project analyzing 100K+ orders from 
+Brazil's largest e-commerce platform using MySQL, Excel, and Power BI.
 
-## 🛠️ Tools Used
-- **MySQL** — Data modeling & querying (9 tables, 9 analytical queries)
-- **Excel** — KPI summary, trend charts & business reporting
-- **Power BI** — 3-page interactive dashboard with 12+ visuals
+## Tools Used
+- MySQL — Data storage & SQL analysis
+- Excel — Data exploration & pivot tables
+- Power BI — Interactive 2-page dashboard
 
-## 📁 Dataset
-- Source: [Olist Brazilian E-Commerce Dataset - Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-- Size: 100,000+ orders | 9 tables | 2016-2018
+## Dataset
+- Source: Kaggle — Olist Brazilian E-Commerce
+- Tables: Customers, Orders, Payments, Products, Reviews
 
-## 🔍 Key Business Insights
-- Total revenue of **$16.01M** generated across 99,441 orders
-- **97% of customers** never returned after first purchase — critical churn issue
-- **São Paulo** dominates with 15K+ orders — largest market by far
-- **Health & Beauty** is the top revenue category
-- **78% of payments** made by credit card
-- **92%+ orders** delivered on time
+> Note: The orders table was not available during Power BI dashboard 
+> development due to a system migration. Dashboard insights are based 
+> on Customers, Order Items, Order Payments, Order Reviews, and 
+> Products tables.
 
-## 📸 Dashboard Preview
-![Revenue Overview](screenshots/page1_revenue.png)
-![Product Analysis](screenshots/page2_products.png)
-![Churn & Operations](screenshots/page3_operations.png)
+## Project Structure
+- data/ — Raw CSV files
+- excel/ — Excel analysis
+- powerbi/ — Dashboard file and PDF
+- sql/ — SQL queries
+- screenshots/ — Dashboard screenshots
 
-## 📂 Repository Structure
-## 🚀 How to Run
-1. Download dataset from Kaggle link above
-2. Run `sql/analysis_queries.sql` in MySQL
-3. Open `excel/Olist_Financial_Analysis.xlsx`
-4. Recreate Power BI dashboard following `/powerbi/README.md`
+## Dashboard Pages
+- Page 1: Revenue Overview — total revenue, monthly trends, top states
+- Page 2: Product Analysis — top categories, payment types, revenue contribution
 
-## 👤 Author
-**[Mohd Badruzama Ansari]** | Aspiring Data Analyst
+## Key Insights
+- Total Revenue: $16.01M across 99,441 orders
+- Health & Beauty is the top revenue generating category
+- Credit card is the most preferred payment method (78%)
+- Sao Paulo state generates highest revenue
+
+> Note: .pbix file exceeds GitHub's 25MB limit. 
+> Dashboard screenshots are provided in the screenshots folder.
